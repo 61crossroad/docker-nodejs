@@ -10,6 +10,7 @@
 ## create load balancer
 - kubectl expose po kubia --type=NodePort --port=8080 --name kubia-http
 - kubectl get svc
+- minikube service kubia-http --url
 
 ## get the port and access
 - ps -ef | grep docker@127.0.0.1
