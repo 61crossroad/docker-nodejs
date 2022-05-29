@@ -1,6 +1,7 @@
-# Minikube, docker, node.js delployment
-## brew install minikube
-- brew install minikube
+# Minikube, docker, node.js deployment
+## install minikube
+- brew install minikubei
+- minikube start
 ## deploy
 - kubectl cluster-info
 - kubectl get nodes
