@@ -1,0 +1,15 @@
+# Minikube, docker, node.js delployment
+## brew install minikube
+- brew install minikube
+## deploy
+- kubectl cluster-info
+- kubectl get nodes
+- kubectl run kubia --image=freestic/kubia --port=8080
+- kubectl get pods
+## create load balancer
+- kubectl expose po kubia --type=NodePort --port=8080 --name kubia-http
+- kubectl get svc
+
+## get the port and access
+- ps -ef | grep docker@127.0.0.1
+- curl 127.0.0.1:{NODE_PORT}
