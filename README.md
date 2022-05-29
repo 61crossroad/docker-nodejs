@@ -1,6 +1,6 @@
 # Minikube, docker, node.js deployment
 ## install minikube
-- brew install minikubei
+- brew install minikube
 - minikube start
 ## deploy
 - kubectl cluster-info
